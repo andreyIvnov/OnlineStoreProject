@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>My magical Store </h1>
+
+
+<h2>For Add a new Product:</h2>
+
+<form >
+    <label for="name">
+        Name:<br />
+        <input type="text" name="name" id="name" />
+    </label>
+
+    <label for="price">
+        Price:<br />
+        <input type="number" name="price" id="price" />
+    </label>
+
+    <label for="desc">
+        Description:<br />
+        <input type="text" name="desc" id="desc" />
+    </label>
+
+    <label for="image">
+        Image:<br />
+        <input type="text" name="image" id="image" />
+    </label>
+
+    <label for="quantity">
+        Quantity:<br />
+        <input type="number" name="quantity" id="quantity" />
+    </label>
+    <button type="button" class="btn btn-success" onclick="addNew()">Add Product</button>
+</form>
+
+<br /><br /><br />
+
+<table class="table  table-bordered" id="Container">
+</table>
+
+
+<script src="~/js/DataRanderator.js"></script>
